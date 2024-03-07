@@ -13,10 +13,13 @@
 		1772DA502B9817D000694483 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1772DA4E2B9817D000694483 /* Main.storyboard */; };
 		1772DA522B9817D100694483 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1772DA512B9817D100694483 /* Assets.xcassets */; };
 		1772DA552B9817D100694483 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1772DA532B9817D100694483 /* LaunchScreen.storyboard */; };
+		1772DA5D2B9820C200694483 /* questaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1772DA5C2B9820C200694483 /* questaoViewController.swift */; };
+		1772DA5F2B98330300694483 /* questao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1772DA5E2B98330300694483 /* questao.swift */; };
+		1772DA612B99488900694483 /* desempenhoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1772DA602B99488900694483 /* desempenhoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1772DA452B9817D000694483 /* firs-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "firs-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1772DA452B9817D000694483 /* first-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "first-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1772DA482B9817D000694483 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1772DA4A2B9817D000694483 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1772DA4C2B9817D000694483 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		1772DA512B9817D100694483 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1772DA542B9817D100694483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1772DA562B9817D100694483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1772DA5C2B9820C200694483 /* questaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = questaoViewController.swift; sourceTree = "<group>"; };
+		1772DA5E2B98330300694483 /* questao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = questao.swift; sourceTree = "<group>"; };
+		1772DA602B99488900694483 /* desempenhoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = desempenhoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +54,7 @@
 		1772DA462B9817D000694483 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1772DA452B9817D000694483 /* firs-app.app */,
+				1772DA452B9817D000694483 /* first-app.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,9 +62,10 @@
 		1772DA472B9817D000694483 /* firs-app */ = {
 			isa = PBXGroup;
 			children = (
+				1772DA632B99703F00694483 /* Modelo */,
+				1772DA622B996F4000694483 /* viewControllers */,
 				1772DA482B9817D000694483 /* AppDelegate.swift */,
 				1772DA4A2B9817D000694483 /* SceneDelegate.swift */,
-				1772DA4C2B9817D000694483 /* ViewController.swift */,
 				1772DA4E2B9817D000694483 /* Main.storyboard */,
 				1772DA512B9817D100694483 /* Assets.xcassets */,
 				1772DA532B9817D100694483 /* LaunchScreen.storyboard */,
@@ -67,12 +74,30 @@
 			path = "firs-app";
 			sourceTree = "<group>";
 		};
+		1772DA622B996F4000694483 /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1772DA4C2B9817D000694483 /* ViewController.swift */,
+				1772DA5C2B9820C200694483 /* questaoViewController.swift */,
+				1772DA602B99488900694483 /* desempenhoViewController.swift */,
+			);
+			path = viewControllers;
+			sourceTree = "<group>";
+		};
+		1772DA632B99703F00694483 /* Modelo */ = {
+			isa = PBXGroup;
+			children = (
+				1772DA5E2B98330300694483 /* questao.swift */,
+			);
+			path = Modelo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1772DA442B9817D000694483 /* firs-app */ = {
+		1772DA442B9817D000694483 /* first-app */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1772DA592B9817D100694483 /* Build configuration list for PBXNativeTarget "firs-app" */;
+			buildConfigurationList = 1772DA592B9817D100694483 /* Build configuration list for PBXNativeTarget "first-app" */;
 			buildPhases = (
 				1772DA412B9817D000694483 /* Sources */,
 				1772DA422B9817D000694483 /* Frameworks */,
@@ -82,9 +107,9 @@
 			);
 			dependencies = (
 			);
-			name = "firs-app";
+			name = "first-app";
 			productName = "firs-app";
-			productReference = 1772DA452B9817D000694483 /* firs-app.app */;
+			productReference = 1772DA452B9817D000694483 /* first-app.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +127,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1772DA402B9817D000694483 /* Build configuration list for PBXProject "firs-app" */;
+			buildConfigurationList = 1772DA402B9817D000694483 /* Build configuration list for PBXProject "first-app" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +140,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1772DA442B9817D000694483 /* firs-app */,
+				1772DA442B9817D000694483 /* first-app */,
 			);
 		};
 /* End PBXProject section */
@@ -138,9 +163,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1772DA612B99488900694483 /* desempenhoViewController.swift in Sources */,
+				1772DA5F2B98330300694483 /* questao.swift in Sources */,
 				1772DA4D2B9817D000694483 /* ViewController.swift in Sources */,
 				1772DA492B9817D000694483 /* AppDelegate.swift in Sources */,
 				1772DA4B2B9817D000694483 /* SceneDelegate.swift in Sources */,
+				1772DA5D2B9820C200694483 /* questaoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +327,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -326,6 +355,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -342,7 +372,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1772DA402B9817D000694483 /* Build configuration list for PBXProject "firs-app" */ = {
+		1772DA402B9817D000694483 /* Build configuration list for PBXProject "first-app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1772DA572B9817D100694483 /* Debug */,
@@ -351,7 +381,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1772DA592B9817D100694483 /* Build configuration list for PBXNativeTarget "firs-app" */ = {
+		1772DA592B9817D100694483 /* Build configuration list for PBXNativeTarget "first-app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1772DA5A2B9817D100694483 /* Debug */,
